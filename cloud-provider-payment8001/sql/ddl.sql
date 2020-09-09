@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS db2019;
+CREATE DATABASE db2019
+  DEFAULT CHARSET = utf8mb4
+  COLLATE utf8mb4_general_ci;
+USE db2019;
+
+CREATE TABLE payment(
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `serial` varchar(200) DEFAULT '',
+  PRIMARY KEY(`id`)
+) ENGINE=InnoDB auto_increment=1 DEFAULT CHARSET=utf8
